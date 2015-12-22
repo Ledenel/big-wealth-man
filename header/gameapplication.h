@@ -1,10 +1,10 @@
-#ifndef GAMEAPPLICATION_H_INCLUDED
+﻿#ifndef GAMEAPPLICATION_H_INCLUDED
 #define GAMEAPPLICATION_H_INCLUDED
 
 /**
-    @brief ����һ����Ϸ����.
-    ��Ϸ���̹���������Ϸ�еĶ��󣨵�ͼ����ҵȣ���
-    ��������ҿ���Ȩ���������Һ͵�ͼ������Ϣ�ȡ�
+    @brief 代表一个游戏进程.
+    游戏进程管理所有游戏中的对象（地图、玩家等），
+    并赋予玩家控制权、负责给玩家和地图发送消息等。
     @author
     @see Player
     @see Map
@@ -13,19 +13,19 @@
 class GameApplication{
 public:
     /**
-        @brief ������Ϸ����Ҫ����Դ����ʹ�õĶ���
+        @brief 加载游戏所必要的资源和所使用的对象。
         @author
         @see Resource
     */
     void load();
     /**
-        @brief ������Ϸ��
+        @brief 运行游戏。
         @author
         @see Resource
     */
     void run();
     /**
-        @brief ʹ��Ϸ������������ʤ���ж���
+        @brief 使游戏结束，并进行胜负判定。
         @author
         @see Player
     */

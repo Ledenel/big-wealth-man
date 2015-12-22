@@ -1,4 +1,4 @@
-#ifndef RESOURCES_H_INCLUDED
+﻿#ifndef RESOURCES_H_INCLUDED
 #define RESOURCES_H_INCLUDED
 
 #include <string>
