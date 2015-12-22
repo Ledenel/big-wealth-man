@@ -31,12 +31,26 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="header/cell.h" />
 		<Unit filename="header/entity.h" />
+		<Unit filename="header/gameapplication.h" />
+		<Unit filename="header/map.h" />
+		<Unit filename="header/player.h" />
+		<Unit filename="header/resources.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
 			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build extract_all="1" />
+				<doxyfile_warnings />
+				<doxyfile_output html_help="1" chi="1" />
+				<doxyfile_dot />
+				<general use_at_in_tags="1" />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
