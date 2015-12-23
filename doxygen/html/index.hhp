@@ -1,0 +1,66 @@
+[OPTIONS]
+Compiled file=../big-wealth-man.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Create CHI file=YES
+Title=big-wealth-man
+
+[WINDOWS]
+main="big-wealth-man","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+cell_8h_source.html
+entity_8h_source.html
+gameapplication_8h_source.html
+map_8h_source.html
+player_8h_source.html
+resources_8h_source.html
+cell_8h.html
+entity_8h.html
+gameapplication_8h.html
+map_8h.html
+player_8h.html
+resources_8h.html
+class_bank.html
+class_bank-members.html
+class_cell.html
+class_cell-members.html
+class_game_application.html
+class_game_application-members.html
+class_map.html
+class_player.html
+class_resource.html
+class_resource-members.html
+dir_1ec98ce50fa6ec55b40b8ffb1df38c3c.html
+index.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+functions_vars.html
+files.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+doc.png
+folderopen.png
+folderclosed.png
+arrowdown.png
+arrowright.png
+splitbar.png

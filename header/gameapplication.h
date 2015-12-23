@@ -21,7 +21,6 @@ public:
     /**
         @brief 运行游戏。
         @author
-        @see Resource
     */
     void run();
     /**
@@ -30,6 +29,26 @@ public:
         @see Player
     */
     void gameover();
+    /**
+        @brief 获取当前回合的玩家。
+        @author
+        @return 当前回合的玩家。
+        @see Player
+    */
+    Player getCurrentPlayer();
+    /**
+        @brief 结束当前回合.
+        结束当前玩家的回合，并将操作权转移给下一名玩家。
+        @author
+        @see Player
+    */
+    void playerFinish();
+    /**
+        @brief 将当前玩家的面板及地图绘制到控制台上。
+        @author
+        @see Map
+    */
+    void paintUserPanel();
 private:
 
 };
