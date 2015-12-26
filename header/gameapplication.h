@@ -5,8 +5,8 @@ class Player;
 class Map;
 
 /**
-    @brief 代表一个游戏进程.
-    游戏进程管理所有游戏中的对象（地图、玩家等），
+    @brief 代表一个游戏进程.\n
+    游戏进程管理所有游戏中的对象（地图、玩家等），\n
     并赋予玩家控制权、负责给玩家和地图发送消息等。
     @author
     @see Player
@@ -40,7 +40,7 @@ public:
     */
     Player& getCurrentPlayer();
     /**
-        @brief 结束当前回合.
+        @brief 结束当前回合.\n
         结束当前玩家的回合，并将操作权转移给下一名玩家。
         @author
         @see Player
