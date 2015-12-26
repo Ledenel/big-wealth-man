@@ -64,5 +64,20 @@ public:
 private:
 
 };
+/**
+    @brief 代表界面绘制器。
+*/
+class Painter{
+public:
+    /**
+        @brief 通过指定的界面数据打印至控制台。
+    */
+    static void paint(const char * data);
+    /**
+        可以在其中设置格式，并插入相应的数据。
+        @brief 通过指定的界面数据打印至控制台。
+    */
+    static void paintFormat(const char * data,...);
+};
 
 #endif // GAMEAPPLICATION_H_INCLUDED

@@ -86,6 +86,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_map.html#ac9f95ec2f7e313381c47d43bf152a7b7"><param name="Name" value="setCell"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_map.html#abda4cff729457640afefe42374a13ff8"><param name="Name" value="setGame"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_painter.html#a8ed9fa8b891ea5aab152b231443b974e"><param name="Name" value="paint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_painter.html"><param name="Name" value="Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_painter.html#a8ed9fa8b891ea5aab152b231443b974e"><param name="Name" value="paint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_painter.html#a3e8fa1185fd2dc81b8319ae4b69a1a52"><param name="Name" value="paintFormat"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_painter.html#a3e8fa1185fd2dc81b8319ae4b69a1a52"><param name="Name" value="paintFormat"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_game_application.html#a4d2d67f151c6c21e9f410d6b59e0ca9f"><param name="Name" value="paintUserPanel"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_bank.html#a5676ccbd59ff4f795de8c4fb792551b4"><param name="Name" value="passBy"></OBJECT>
   <UL>
