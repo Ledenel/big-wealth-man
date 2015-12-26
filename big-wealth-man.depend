@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1451102007 source:d:\workspace\git\github\self\big-wealth-man\src\testcase\headertest.cpp
+	"../../header/entity.h"
+
+1451102290 d:\workspace\git\github\self\big-wealth-man\header\entity.h
+	"gameapplication.h"
+	"map.h"
+	"resources.h"
+	"cell.h"
+	"player.h"
+
+1451102383 d:\workspace\git\github\self\big-wealth-man\header\gameapplication.h
+
+1451102750 d:\workspace\git\github\self\big-wealth-man\header\map.h
+
+1451101740 d:\workspace\git\github\self\big-wealth-man\header\resources.h
+	<string>
+
+1451102486 d:\workspace\git\github\self\big-wealth-man\header\cell.h
+	<string>
+
+1451103277 d:\workspace\git\github\self\big-wealth-man\header\player.h
+

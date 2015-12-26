@@ -36,6 +36,7 @@
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -51,45 +52,56 @@
 <a href="cell_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CELL_H_INCLUDED</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CELL_H_INCLUDED</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="player_8h.html">player.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_cell.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cell.html">Cell</a>{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_cell.html#a21992b6f077639f273c5ad1dd5279d69">passBy</a>(<a class="code" href="class_player.html">Player</a> player);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a78d82b277e8fb2e1c3e70286bcc85314">getX</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a2df3d69f5d0c10a1e1f02c5f89045e0a">getY</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a0a3137b9e722a12161681f9f669ee586">setX</a>(<span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ac0920695bd2d0893fe16e503273de82f">setY</a>(<span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">x</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">y</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_bank.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bank.html">Bank</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bank.html#a752c8c925b2ea74eef4553e6ec92250b">passBy</a>(<a class="code" href="class_player.html">Player</a> player) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // CELL_H_INCLUDED</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_player.html">Player</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_game_application.html">GameApplication</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_cell.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cell.html">Cell</a>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<a class="code" href="class_game_application.html">GameApplication</a> &amp;game);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cell.html#a09c678027c0c3357929313da0caeb049">setGame</a>(<a class="code" href="class_game_application.html">GameApplication</a> &amp;game);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_cell.html#a43160e9706d6c45c415034de413f1bbf">passBy</a>(<a class="code" href="class_player.html">Player</a>&amp; player);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_cell.html#aad5bdd844e87678f705384dc9d272528">getResourceName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a78d82b277e8fb2e1c3e70286bcc85314">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a2df3d69f5d0c10a1e1f02c5f89045e0a">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ac86f89360df71ac7323befef1fc429a7">setX</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#af8e77cc7161a7ff28c599a76fc765442">setY</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">x</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">y</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_bank.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bank.html">Bank</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bank.html#a5676ccbd59ff4f795de8c4fb792551b4">passBy</a>(<a class="code" href="class_player.html">Player</a>&amp; player) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="class_bank.html#a3b6a13a7d2f4160502396fb27cca571a">getResourceName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // CELL_H_INCLUDED</span></div>
+<div class="ttc" id="class_cell_html_a09c678027c0c3357929313da0caeb049"><div class="ttname"><a href="class_cell.html#a09c678027c0c3357929313da0caeb049">Cell::setGame</a></div><div class="ttdeci">void setGame(GameApplication &amp;game)</div></div>
+<div class="ttc" id="class_game_application_html"><div class="ttname"><a href="class_game_application.html">GameApplication</a></div><div class="ttdoc">代表一个游戏进程. 游戏进程管理所有游戏中的对象（地图、玩家等）， 并赋予玩家控制权、负责给玩家和地图发...</div><div class="ttdef"><b>Definition:</b> gameapplication.h:16</div></div>
 <div class="ttc" id="class_cell_html_a2df3d69f5d0c10a1e1f02c5f89045e0a"><div class="ttname"><a href="class_cell.html#a2df3d69f5d0c10a1e1f02c5f89045e0a">Cell::getY</a></div><div class="ttdeci">int getY() const </div></div>
-<div class="ttc" id="class_cell_html_ab99a0cead05c6b8129ddf3231b11c1ad"><div class="ttname"><a href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">Cell::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> cell.h:16</div></div>
-<div class="ttc" id="class_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.h:6</div></div>
-<div class="ttc" id="player_8h_html"><div class="ttname"><a href="player_8h.html">player.h</a></div></div>
-<div class="ttc" id="class_cell_html_a0a3137b9e722a12161681f9f669ee586"><div class="ttname"><a href="class_cell.html#a0a3137b9e722a12161681f9f669ee586">Cell::setX</a></div><div class="ttdeci">int setX(int value) const </div></div>
-<div class="ttc" id="class_cell_html_a21992b6f077639f273c5ad1dd5279d69"><div class="ttname"><a href="class_cell.html#a21992b6f077639f273c5ad1dd5279d69">Cell::passBy</a></div><div class="ttdeci">virtual void passBy(Player player)</div></div>
-<div class="ttc" id="class_bank_html"><div class="ttname"><a href="class_bank.html">Bank</a></div><div class="ttdef"><b>Definition:</b> cell.h:19</div></div>
-<div class="ttc" id="class_bank_html_a752c8c925b2ea74eef4553e6ec92250b"><div class="ttname"><a href="class_bank.html#a752c8c925b2ea74eef4553e6ec92250b">Bank::passBy</a></div><div class="ttdeci">void passBy(Player player) override</div></div>
+<div class="ttc" id="class_cell_html_ac86f89360df71ac7323befef1fc429a7"><div class="ttname"><a href="class_cell.html#ac86f89360df71ac7323befef1fc429a7">Cell::setX</a></div><div class="ttdeci">int setX(int value)</div></div>
+<div class="ttc" id="class_cell_html_ab99a0cead05c6b8129ddf3231b11c1ad"><div class="ttname"><a href="class_cell.html#ab99a0cead05c6b8129ddf3231b11c1ad">Cell::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> cell.h:22</div></div>
+<div class="ttc" id="class_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.h:8</div></div>
+<div class="ttc" id="class_bank_html_a5676ccbd59ff4f795de8c4fb792551b4"><div class="ttname"><a href="class_bank.html#a5676ccbd59ff4f795de8c4fb792551b4">Bank::passBy</a></div><div class="ttdeci">void passBy(Player &amp;player) override</div></div>
+<div class="ttc" id="class_cell_html_a43160e9706d6c45c415034de413f1bbf"><div class="ttname"><a href="class_cell.html#a43160e9706d6c45c415034de413f1bbf">Cell::passBy</a></div><div class="ttdeci">virtual void passBy(Player &amp;player)</div></div>
+<div class="ttc" id="class_bank_html"><div class="ttname"><a href="class_bank.html">Bank</a></div><div class="ttdef"><b>Definition:</b> cell.h:25</div></div>
 <div class="ttc" id="class_cell_html_a78d82b277e8fb2e1c3e70286bcc85314"><div class="ttname"><a href="class_cell.html#a78d82b277e8fb2e1c3e70286bcc85314">Cell::getX</a></div><div class="ttdeci">int getX() const </div></div>
-<div class="ttc" id="class_cell_html_ac008158796a0bfdf37be2f26eff651ef"><div class="ttname"><a href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">Cell::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> cell.h:15</div></div>
-<div class="ttc" id="class_cell_html_ac0920695bd2d0893fe16e503273de82f"><div class="ttname"><a href="class_cell.html#ac0920695bd2d0893fe16e503273de82f">Cell::setY</a></div><div class="ttdeci">int setY(int value) const </div></div>
-<div class="ttc" id="class_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdef"><b>Definition:</b> player.h:4</div></div>
+<div class="ttc" id="class_cell_html_ac008158796a0bfdf37be2f26eff651ef"><div class="ttname"><a href="class_cell.html#ac008158796a0bfdf37be2f26eff651ef">Cell::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> cell.h:21</div></div>
+<div class="ttc" id="class_cell_html_af8e77cc7161a7ff28c599a76fc765442"><div class="ttname"><a href="class_cell.html#af8e77cc7161a7ff28c599a76fc765442">Cell::setY</a></div><div class="ttdeci">int setY(int value)</div></div>
+<div class="ttc" id="class_cell_html_a394510643e8664cf12b5efaf5cb99f71"><div class="ttname"><a href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell::Cell</a></div><div class="ttdeci">Cell()</div></div>
+<div class="ttc" id="class_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdef"><b>Definition:</b> player.h:6</div></div>
+<div class="ttc" id="class_cell_html_aad5bdd844e87678f705384dc9d272528"><div class="ttname"><a href="class_cell.html#aad5bdd844e87678f705384dc9d272528">Cell::getResourceName</a></div><div class="ttdeci">virtual const std::string &amp; getResourceName() const </div></div>
+<div class="ttc" id="class_bank_html_a3b6a13a7d2f4160502396fb27cca571a"><div class="ttname"><a href="class_bank.html#a3b6a13a7d2f4160502396fb27cca571a">Bank::getResourceName</a></div><div class="ttdeci">const std::string &amp; getResourceName() const  override</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 18:14:17 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 13:16:00 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

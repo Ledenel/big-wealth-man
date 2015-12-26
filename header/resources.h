@@ -19,14 +19,14 @@ public:
         @param resourceName 要获取的资源名。
         @return 资源名所代表的文本。
     */
-    std::string getString(std::string resourceName);
+    const std::string& getString(const std::string& resourceName);
     /**
         @brief 获取为指定资源所设置的控制台颜色。
         @param resourceName 要获取的资源名。
         @return 一个代表控制台输出颜色的整数.
         这包括前景色、背景色以及特殊格式。
     */
-    int getColor(std::string resourceName);
+    int getColor(const std::string& resourceName);
 private:
 
 };

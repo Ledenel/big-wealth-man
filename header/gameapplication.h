@@ -1,6 +1,9 @@
 ﻿#ifndef GAMEAPPLICATION_H_INCLUDED
 #define GAMEAPPLICATION_H_INCLUDED
 
+class Player;
+class Map;
+
 /**
     @brief 代表一个游戏进程.
     游戏进程管理所有游戏中的对象（地图、玩家等），
@@ -35,7 +38,7 @@ public:
         @return 当前回合的玩家。
         @see Player
     */
-    Player getCurrentPlayer();
+    Player& getCurrentPlayer();
     /**
         @brief 结束当前回合.
         结束当前玩家的回合，并将操作权转移给下一名玩家。
@@ -49,6 +52,7 @@ public:
         @see Map
     */
     void paintUserPanel();
+    Map& getMap();
 private:
 
 };

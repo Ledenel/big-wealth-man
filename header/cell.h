@@ -1,15 +1,21 @@
 ﻿#ifndef CELL_H_INCLUDED
 #define CELL_H_INCLUDED
 
-#include "player.h"
+#include <string>
+class Player;
+class GameApplication;
 
 class Cell{
 public:
-    virtual void passBy(Player player);
+    Cell();
+    Cell(GameApplication &game);
+    void setGame(GameApplication &game);
+    virtual void passBy(Player& player);
+    virtual const std::string& getResourceName() const;
     int getX() const;
     int getY() const;
-    int setX(int value) const;
-    int setY(int value) const;
+    int setX(int value);
+    int setY(int value);
 private:
 protected:
     int x;
@@ -18,7 +24,8 @@ protected:
 
 class Bank : public Cell{
 public:
-    void passBy(Player player) override;
+    void passBy(Player& player) override;
+    const std::string& getResourceName() const override;
 private:
 
 };

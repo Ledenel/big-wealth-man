@@ -61,25 +61,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e113312ddcfe778b3e602ea2f08400e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e">load</a> ()</td></tr>
 <tr class="memdesc:a3e113312ddcfe778b3e602ea2f08400e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将资源加载至Resource对象中。  <a href="#a3e113312ddcfe778b3e602ea2f08400e">More...</a><br /></td></tr>
 <tr class="separator:a3e113312ddcfe778b3e602ea2f08400e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41fe3d1428db85a465eb6411db25fc4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resource.html#af41fe3d1428db85a465eb6411db25fc4">getString</a> (std::string resourceName)</td></tr>
-<tr class="memdesc:af41fe3d1428db85a465eb6411db25fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取具有指定资源名的文本。  <a href="#af41fe3d1428db85a465eb6411db25fc4">More...</a><br /></td></tr>
-<tr class="separator:af41fe3d1428db85a465eb6411db25fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43246395f8dc871061a42f7a14e8db3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resource.html#a43246395f8dc871061a42f7a14e8db3c">getColor</a> (std::string resourceName)</td></tr>
-<tr class="memdesc:a43246395f8dc871061a42f7a14e8db3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取为指定资源所设置的控制台颜色。  <a href="#a43246395f8dc871061a42f7a14e8db3c">More...</a><br /></td></tr>
-<tr class="separator:a43246395f8dc871061a42f7a14e8db3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb0d10414c46710d0d5e19477f4fc21"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resource.html#a1fb0d10414c46710d0d5e19477f4fc21">getString</a> (const std::string &amp;resourceName)</td></tr>
+<tr class="memdesc:a1fb0d10414c46710d0d5e19477f4fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取具有指定资源名的文本。  <a href="#a1fb0d10414c46710d0d5e19477f4fc21">More...</a><br /></td></tr>
+<tr class="separator:a1fb0d10414c46710d0d5e19477f4fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79db37c4d66e869410585ef674f0099c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resource.html#a79db37c4d66e869410585ef674f0099c">getColor</a> (const std::string &amp;resourceName)</td></tr>
+<tr class="memdesc:a79db37c4d66e869410585ef674f0099c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取为指定资源所设置的控制台颜色。  <a href="#a79db37c4d66e869410585ef674f0099c">More...</a><br /></td></tr>
+<tr class="separator:a79db37c4d66e869410585ef674f0099c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>代表一个游戏资源管理器. 所有的游戏资源（对话，文字，地图显示及提示信息等）都可以从该管理器中获得。 </p>
 <dl class="section author"><dt>Author</dt><dd></dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a43246395f8dc871061a42f7a14e8db3c"></a>
+<a class="anchor" id="a79db37c4d66e869410585ef674f0099c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int Resource::getColor </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>resourceName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -97,14 +97,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af41fe3d1428db85a465eb6411db25fc4"></a>
+<a class="anchor" id="a1fb0d10414c46710d0d5e19477f4fc21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Resource::getString </td>
+          <td class="memname">const std::string&amp; Resource::getString </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>resourceName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 18:14:17 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 13:16:01 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

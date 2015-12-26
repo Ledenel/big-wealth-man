@@ -23,6 +23,7 @@ resources_8h_source.html
 cell_8h.html
 entity_8h.html
 gameapplication_8h.html
+header_test_8cpp.html
 map_8h.html
 player_8h.html
 resources_8h.html
@@ -33,10 +34,14 @@ class_cell-members.html
 class_game_application.html
 class_game_application-members.html
 class_map.html
+class_map-members.html
 class_player.html
+class_player-members.html
 class_resource.html
 class_resource-members.html
 dir_1ec98ce50fa6ec55b40b8ffb1df38c3c.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+dir_4aa383479e9b7619a29def4d24606221.html
 index.html
 annotated.html
 classes.html
@@ -45,6 +50,8 @@ functions.html
 functions_func.html
 functions_vars.html
 files.html
+globals.html
+globals_func.html
 tab_a.png
 tab_b.png
 tab_h.png

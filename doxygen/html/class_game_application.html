@@ -67,15 +67,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f55af1b8565a74d4e40106c273c097f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#a3f55af1b8565a74d4e40106c273c097f">gameover</a> ()</td></tr>
 <tr class="memdesc:a3f55af1b8565a74d4e40106c273c097f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使游戏结束，并进行胜负判定。  <a href="#a3f55af1b8565a74d4e40106c273c097f">More...</a><br /></td></tr>
 <tr class="separator:a3f55af1b8565a74d4e40106c273c097f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7714e512c6a415a87ad98e28dbb29a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#a7714e512c6a415a87ad98e28dbb29a5c">getCurrentPlayer</a> ()</td></tr>
-<tr class="memdesc:a7714e512c6a415a87ad98e28dbb29a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前回合的玩家。  <a href="#a7714e512c6a415a87ad98e28dbb29a5c">More...</a><br /></td></tr>
-<tr class="separator:a7714e512c6a415a87ad98e28dbb29a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41b56c5d20878b5c613353c93153f3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#af41b56c5d20878b5c613353c93153f3c">getCurrentPlayer</a> ()</td></tr>
+<tr class="memdesc:af41b56c5d20878b5c613353c93153f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前回合的玩家。  <a href="#af41b56c5d20878b5c613353c93153f3c">More...</a><br /></td></tr>
+<tr class="separator:af41b56c5d20878b5c613353c93153f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74be7804c979e7c62b76f632e4af6e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#a74be7804c979e7c62b76f632e4af6e28">playerFinish</a> ()</td></tr>
 <tr class="memdesc:a74be7804c979e7c62b76f632e4af6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束当前回合. 结束当前玩家的回合，并将操作权转移给下一名玩家。  <a href="#a74be7804c979e7c62b76f632e4af6e28">More...</a><br /></td></tr>
 <tr class="separator:a74be7804c979e7c62b76f632e4af6e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2d67f151c6c21e9f410d6b59e0ca9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#a4d2d67f151c6c21e9f410d6b59e0ca9f">paintUserPanel</a> ()</td></tr>
 <tr class="memdesc:a4d2d67f151c6c21e9f410d6b59e0ca9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将当前玩家的面板及地图绘制到控制台上。  <a href="#a4d2d67f151c6c21e9f410d6b59e0ca9f">More...</a><br /></td></tr>
 <tr class="separator:a4d2d67f151c6c21e9f410d6b59e0ca9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c255893ba39b906243cfd807ac4b249"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_map.html">Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_application.html#a7c255893ba39b906243cfd807ac4b249">getMap</a> ()</td></tr>
+<tr class="separator:a7c255893ba39b906243cfd807ac4b249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>代表一个游戏进程. 游戏进程管理所有游戏中的对象（地图、玩家等）， 并赋予玩家控制权、负责给玩家和地图发送消息等。 </p>
@@ -105,12 +107,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7714e512c6a415a87ad98e28dbb29a5c"></a>
+<a class="anchor" id="af41b56c5d20878b5c613353c93153f3c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_player.html">Player</a> GameApplication::getCurrentPlayer </td>
+          <td class="memname"><a class="el" href="class_player.html">Player</a>&amp; GameApplication::getCurrentPlayer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -122,6 +124,21 @@ Public Member Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>当前回合的玩家。 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_player.html">Player</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c255893ba39b906243cfd807ac4b249"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_map.html">Map</a>&amp; GameApplication::getMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -206,7 +223,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 23 2015 18:14:17 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 13:16:01 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>
