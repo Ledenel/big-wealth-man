@@ -5,9 +5,9 @@ class Player;
 class Map;
 
 /**
-    @brief 代表一个游戏进程.\n
     游戏进程管理所有游戏中的对象（地图、玩家等），\n
-    并赋予玩家控制权、负责给玩家和地图发送消息等。
+    并赋予玩家控制权、负责给玩家和地图发送消息等。\n
+    @brief 代表一个游戏进程.\n
     @author
     @see Player
     @see Map
@@ -22,6 +22,9 @@ public:
     */
     void load();
     /**
+        这将使得游戏主循环开始运行；
+        这包括赋予玩家控制权、负责给玩家和地图发送消息。\n
+        若没有加载资源，则游戏不会运行（无任何效果）。
         @brief 运行游戏。
         @author
     */
@@ -40,8 +43,8 @@ public:
     */
     Player& getCurrentPlayer();
     /**
-        @brief 结束当前回合.\n
         结束当前玩家的回合，并将操作权转移给下一名玩家。
+        @brief 结束当前回合.
         @author
         @see Player
     */
@@ -52,6 +55,11 @@ public:
         @see Map
     */
     void paintUserPanel();
+    /**
+        @brief 获取游戏中使用的地图。
+        @return 地图对象。
+        @see Map
+    */
     Map& getMap();
 private:
 

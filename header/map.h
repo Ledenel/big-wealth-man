@@ -6,10 +6,13 @@ class Cell;
 
 class Map{
 public:
-    Map();
-    Map(GameApplication& game);
+    Map(int width, int height);
+    Map(int width, int height, GameApplication& game);
     void setGame(GameApplication& game);
-    Cell& get(int x,int y);
+    int getWidth();
+    int getHeight();
+    Cell& getCell(int x, int y);
+    void setCell(Cell& value, int x, int y);
 };
 
 #endif // MAP_H_INCLUDED

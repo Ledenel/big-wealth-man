@@ -14,8 +14,8 @@ public:
     virtual const std::string& getResourceName() const;
     int getX() const;
     int getY() const;
-    int setX(int value);
-    int setY(int value);
+    void setX(int value);
+    void setY(int value);
 private:
 protected:
     int x;

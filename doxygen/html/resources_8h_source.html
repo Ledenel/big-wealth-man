@@ -53,24 +53,40 @@
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RESOURCES_H_INCLUDED</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_resource.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_resource.html">Resource</a>{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e">load</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="class_resource.html#a1fb0d10414c46710d0d5e19477f4fc21">getString</a>(<span class="keyword">const</span> std::string&amp; resourceName);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_resource.html#a79db37c4d66e869410585ef674f0099c">getColor</a>(<span class="keyword">const</span> std::string&amp; resourceName);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // RESOURCES_H_INCLUDED</span></div>
-<div class="ttc" id="class_resource_html"><div class="ttname"><a href="class_resource.html">Resource</a></div><div class="ttdoc">代表一个游戏资源管理器. 所有的游戏资源（对话，文字，地图显示及提示信息等）都可以从该管理器中获得。 ...</div><div class="ttdef"><b>Definition:</b> resources.h:10</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_resource.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_resource.html">Resource</a>{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e">load</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="class_resource.html#a1fb0d10414c46710d0d5e19477f4fc21">getString</a>(<span class="keyword">const</span> std::string&amp; resourceName);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_resource.html#a79db37c4d66e869410585ef674f0099c">getColor</a>(<span class="keyword">const</span> std::string&amp; resourceName);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_logger.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_logger.html">Logger</a>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_logger.html#af4ca9af899d06ee8d5b3aac1901a5baf">log</a>(<span class="keyword">const</span> std::string&amp; from,<span class="keyword">const</span> std::string&amp; message);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_logger.html#af4ca9af899d06ee8d5b3aac1901a5baf">log</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *from,<span class="keyword">const</span> <span class="keywordtype">char</span> *message);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_logger.html#a3267caf0a1624e7b5d10bdf797797f6d">toConsole</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_logger.html#a44d79a2a628f7ae83ea3c33efc679dbe">toFile</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_logger.html#aabb1c04c8a9957ff9cf203bce3ce06df">disabled</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> std::ostream&amp; out;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // RESOURCES_H_INCLUDED</span></div>
+<div class="ttc" id="class_logger_html"><div class="ttname"><a href="class_logger.html">Logger</a></div><div class="ttdoc">代表调试用的日志，将调试信息与游戏界面字符分离。 </div><div class="ttdef"><b>Definition:</b> resources.h:48</div></div>
+<div class="ttc" id="class_logger_html_af4ca9af899d06ee8d5b3aac1901a5baf"><div class="ttname"><a href="class_logger.html#af4ca9af899d06ee8d5b3aac1901a5baf">Logger::log</a></div><div class="ttdeci">static void log(const std::string &amp;from, const std::string &amp;message)</div><div class="ttdoc">记录日志。 </div></div>
+<div class="ttc" id="class_logger_html_a44d79a2a628f7ae83ea3c33efc679dbe"><div class="ttname"><a href="class_logger.html#a44d79a2a628f7ae83ea3c33efc679dbe">Logger::toFile</a></div><div class="ttdeci">static void toFile()</div><div class="ttdoc">将日志的输出模式改变为向日志文件输出。 </div></div>
+<div class="ttc" id="class_resource_html"><div class="ttname"><a href="class_resource.html">Resource</a></div><div class="ttdoc">代表一个游戏资源管理器. </div><div class="ttdef"><b>Definition:</b> resources.h:17</div></div>
+<div class="ttc" id="class_logger_html_aabb1c04c8a9957ff9cf203bce3ce06df"><div class="ttname"><a href="class_logger.html#aabb1c04c8a9957ff9cf203bce3ce06df">Logger::disabled</a></div><div class="ttdeci">static void disabled()</div><div class="ttdoc">禁用日志输出（log方法将不产生任何信息。） </div></div>
+<div class="ttc" id="class_logger_html_a3267caf0a1624e7b5d10bdf797797f6d"><div class="ttname"><a href="class_logger.html#a3267caf0a1624e7b5d10bdf797797f6d">Logger::toConsole</a></div><div class="ttdeci">static void toConsole()</div><div class="ttdoc">将日志的输出模式改变为控制台输出。 </div></div>
 <div class="ttc" id="class_resource_html_a3e113312ddcfe778b3e602ea2f08400e"><div class="ttname"><a href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e">Resource::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">将资源加载至Resource对象中。 </div></div>
 <div class="ttc" id="class_resource_html_a79db37c4d66e869410585ef674f0099c"><div class="ttname"><a href="class_resource.html#a79db37c4d66e869410585ef674f0099c">Resource::getColor</a></div><div class="ttdeci">int getColor(const std::string &amp;resourceName)</div><div class="ttdoc">获取为指定资源所设置的控制台颜色。 </div></div>
 <div class="ttc" id="class_resource_html_a1fb0d10414c46710d0d5e19477f4fc21"><div class="ttname"><a href="class_resource.html#a1fb0d10414c46710d0d5e19477f4fc21">Resource::getString</a></div><div class="ttdeci">const std::string &amp; getString(const std::string &amp;resourceName)</div><div class="ttdoc">获取具有指定资源名的文本。 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 26 2015 13:21:44 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 26 2015 17:06:35 for big-wealth-man by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

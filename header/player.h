@@ -8,12 +8,19 @@ public:
     Player();
     Player(GameApplication& game);
     void setGame(GameApplication& game);
+    double getCash();
+    double addCash(double value);
+    void setCash(double value);
+    double getBankDeposit();
+    double addBankDeposit(double value);
     int getX() const;
     int getY() const;
-        /**
-        @brief 获取当前还能够走的步数。
-        @return 当前能够走的步数.\n
-        如果当前玩家无法行动，则返回0.
+    void setX(int value);
+    void setY(int value);
+    /**
+        @brief 设置当前还能够走的步数。
+        @param value 当前能够走的步数.\n
+        如果当前玩家无法行动，则应当设置为0.
     */
     void setSteps(int value);
     /**
@@ -30,9 +37,20 @@ public:
         当这个值为0时，表明玩家无需跳过回合.
     */
     void setSkipRound(int value);
-    int setX(int value);
-    int setY(int value);
-    //void MoveUp
+    /**
+        @brief 玩家从自己的账户里支付一笔钱.\n
+        这包括从现金中支付，若钱不够，则从存款中支付。
+        @param amount 要支付的钱数。
+        @return 是否支付成功。\n
+        若支付失败，则说明玩家已经破产。
+    */
+    bool payFor(double amount);
+    /**
+        @brief 玩家开始行动.\n
+        包括掷骰子，玩家移动，经过格子的事件处理等。
+        @see Cell
+    */
+    void startRound();
 };
 
 #endif // PLAYER_H_INCLUDED

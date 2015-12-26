@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1451102007 source:d:\workspace\git\github\self\big-wealth-man\src\testcase\headertest.cpp
+1451115628 source:d:\workspace\git\github\self\big-wealth-man\src\testcase\headertest.cpp
 	"../../header/entity.h"
+	<fstream>
+	<iostream>
 
 1451102290 d:\workspace\git\github\self\big-wealth-man\header\entity.h
 	"gameapplication.h"
@@ -9,15 +11,15 @@
 	"cell.h"
 	"player.h"
 
-1451102383 d:\workspace\git\github\self\big-wealth-man\header\gameapplication.h
+1451113998 d:\workspace\git\github\self\big-wealth-man\header\gameapplication.h
 
-1451102750 d:\workspace\git\github\self\big-wealth-man\header\map.h
+1451112186 d:\workspace\git\github\self\big-wealth-man\header\map.h
 
-1451101740 d:\workspace\git\github\self\big-wealth-man\header\resources.h
+1451117151 d:\workspace\git\github\self\big-wealth-man\header\resources.h
 	<string>
 
-1451102486 d:\workspace\git\github\self\big-wealth-man\header\cell.h
+1451114151 d:\workspace\git\github\self\big-wealth-man\header\cell.h
 	<string>
 
-1451103277 d:\workspace\git\github\self\big-wealth-man\header\player.h
+1451114766 d:\workspace\git\github\self\big-wealth-man\header\player.h
 

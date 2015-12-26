@@ -96,13 +96,13 @@ WARN_LOGFILE            = "D:\workspace\Git\GitHub\Self\big-wealth-man\doxygen\d
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
-	"..\header\map.h" \
-	"..\src\testcase\headerTest.cpp" \
+	"..\header\cell.h" \
 	"..\header\gameapplication.h" \
-	"..\header\entity.h" \
-	"..\header\player.h" \
 	"..\header\resources.h" \
-	"..\header\cell.h" 
+	"..\src\testcase\headerTest.cpp" \
+	"..\header\map.h" \
+	"..\header\entity.h" \
+	"..\header\player.h" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO

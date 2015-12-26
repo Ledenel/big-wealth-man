@@ -37,6 +37,7 @@
 		<Unit filename="header/map.h" />
 		<Unit filename="header/player.h" />
 		<Unit filename="header/resources.h" />
+		<Unit filename="src/testcase/headerTest.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
